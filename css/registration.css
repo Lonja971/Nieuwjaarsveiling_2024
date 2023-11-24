@@ -1,0 +1,251 @@
+/*------------------POPUP-LOGIN-------------------*/
+
+.popup_login {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 12;
+	background-color: #415683;
+	background-image: url("../img/background/bg.jpg");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.1s ease 0s;
+}
+body.popupOpen .popup_login {
+	opacity: 1;
+	pointer-events: all;
+}
+.popup__login-box {
+	border-radius: 15px;
+	outline: 2px solid rgb(10, 180, 10);
+	box-shadow: 0px 0px 26px 12px rgba(8, 143, 8, 0.47);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+	align-items: center;
+	padding: 50px 100px;
+	transition: all 0.3s ease 0s;
+	background-color: #423d43;
+}
+.popup__login-maintext {
+	font-size: 25px;
+}
+.popup__login-inputBox {
+   width: 400px;
+}
+.popup__login-input {
+	outline: 2px solid rgba(0, 0, 0, 0.568);
+	background-color: #ffffff00;
+	background-image: linear-gradient(180deg, rgba(255, 0, 0, 0) 5%, #000000a8 100%);
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease 0s;
+	color: rgb(10, 180, 10);
+}
+.popup__login-input:not(:last-child) {
+	margin-bottom: 20px;
+}
+.popup__login-input:focus {
+	outline: 2px solid rgb(10, 180, 10);
+	box-shadow: 0px 0px 26px 12px rgba(8, 143, 8, 0.47);
+}
+.loginTextAlerp {
+   margin: -15px 0px;
+	transition: all 0.2s ease 0s;
+   opacity: 1;
+	pointer-events: all;
+}
+.loginTextAlerp.red {
+	color: red;
+}
+.popup__login-form {
+}
+.button {
+	padding: 20px 70px;
+	position: relative;
+	background-color: #ffffff00;
+	outline: 2px solid rgba(0, 0, 0, 0.568);
+	background-image: linear-gradient(180deg, rgba(255, 0, 0, 0) 5%, #000000a8 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease 0s;
+}
+.button-side {
+	position: absolute;
+	background-color: rgb(10, 180, 10);
+	transition: all 0.3s ease 0s;
+}
+.button-side1 {
+	bottom: 0;
+	left: 0;
+	width: 2px;
+	height: 0%;
+}
+.button-side2 {
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+}
+.button-side3 {
+	top: 0;
+	right: 0;
+	height: 0%;
+	width: 2px;
+}
+.button-side4 {
+	bottom: 0;
+	right: 0;
+	width: 0%;
+	height: 2px;
+}
+.button-text {
+	color: rgb(10, 180, 10);
+	background-color: #ffffff00;
+}
+.button:hover {
+	outline: 2px solid rgba(0, 0, 0, 0);
+	box-shadow: 0px 0px 26px 16px rgba(8, 143, 8, 0.47);
+}
+.button:hover .button-side1 {
+	height: 100%;
+}
+.button:hover .button-side2 {
+	width: 100%;
+}
+.button:hover .button-side3 {
+	height: 100%;
+}
+.button:hover .button-side4 {
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.popup__login-box {
+		padding: 50px 50px;
+	}
+}
+@media (max-width: 670px) {
+	.popup__login-box {
+		padding: 50px 20px;
+	}
+	.popup__login-inputBox {
+		width: 300px;
+	}
+	.popup__login-input {
+		width: 100%;
+	}
+}
+
+/*------------------POPUP-START-------------------*/
+
+.popup__start {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 13;
+	background-color: #000;
+	pointer-events: none;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+}
+.popup__container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+}
+.popup__start.startStart .first-slide {
+	animation-name: popupStartFirst;
+	animation-duration: 7s;
+}
+.popup__start.startStart .second-slide {
+	animation-name: popupStartSecond;
+	animation-duration: 12s;
+}
+.popup__start-photo {
+	position: relative;
+}
+.popup__start-img {
+	width: 450px;
+}
+.popup__text {
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
+	color: #bababa;
+}
+.alarm-img {
+	filter: drop-shadow(0px 0px 10px red);
+}
+.alarm-text {
+	color: red;
+}
+.firstOpen {
+}
+@keyframes popupStartFirst {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes popupStartSecond {
+	50% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	85% {
+		opacity: 1;
+	}
+	95% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@media (max-width: 600px) {
+	.popup__start-img {
+		width: 360px;
+	}
+}
+@media (max-width: 375px) {
+	.popup__start-img {
+		width: 300px;
+	}
+}

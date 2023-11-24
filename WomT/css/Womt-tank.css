@@ -1,0 +1,333 @@
+.tanks {
+   margin-top: 15px;
+}
+.tank__main {
+   display: grid;
+   grid-template-columns: 3fr 4fr;
+   min-height: 370px;
+}
+.tank__main-photo {
+   position: relative;
+}
+.main__photo-flag{
+   position: absolute;
+   width: 250px;
+}
+.main__photo-big {
+   height: 370px;
+   position: absolute;
+   left: -15%;
+   pointer-events: none;
+}
+.main__photo-small{
+   position: absolute;
+   right: -10%;
+   bottom: -10%;
+   width: 400px;
+}
+.tank__main-info {
+}
+.main__photo-beta{
+   position: absolute;
+   width: 125px;
+   bottom: 0;
+   right: 15%;
+}
+.main__info-text{
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 170%;
+   display: flex;
+   flex-direction: column;
+}
+.main__info-name{
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 170%;
+   margin-top: 25px;
+   display: flex;
+   align-items: center;
+}
+.main__photo-type{
+   width: 40px;
+}
+
+
+.tanks__info{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.info__cont{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   width: 400px;
+   height: 255px;
+}
+.main__info-price{
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+}
+.main__info-price img{
+   width: 65px;
+   margin-right: 5px;
+}
+
+
+
+.tank__guntype {
+}
+.tank__guntype-all{
+}
+.tank__guntype-name {
+   font-size: 20px;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.tank__guntype-name img{
+   margin-right: 10px;
+}
+.tank__guntype-ant {
+   font-size: 23px;
+   text-align: center;
+   font-weight: 500;
+}
+.tank__guntype-link {
+   color: rgb(177, 2, 2);
+   text-align: center;
+}
+.tank__guntype-link:hover{
+   text-decoration: underline;
+}
+
+
+
+.tank__gun {
+   width: 500px;
+}
+.tank__gun-name {
+   font-size: 30px;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.tank__gun-box {
+}
+.gun__box-steps {
+   height: 30px;
+   display: grid;
+   grid-template-columns: 2fr 10fr;
+}
+.gunbox__steps-name {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   margin-right: 10px;
+   font-weight: 500;
+   font-size: 16px;
+}
+.gunbox__steps-items {
+   border: 1px solid #000;
+   height: 30px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gunbox__steps-item {
+   border: 1px solid #000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 30px;
+   font-size: 18px;
+   font-weight: 500;
+}
+.gun__box-damage {
+   height: 50px;
+   display: grid;
+   grid-template-columns: 2fr 10fr;
+}
+.gunbox__damage-name {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   margin-right: 10px;
+   font-size: 16px;
+   font-weight: 500;
+}
+.gunbox__damage-items {
+   border: 1px solid #000;
+   height: 70px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gunbox__damage-item {
+   border: 1px solid #000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 69px;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 120%;
+}
+.shot{
+   background-color: rgb(47, 165, 47);
+   border: 1px solid #000;
+   border-top: 2px solid #000;
+   height: 69px;
+}
+
+
+.tank__armor {
+   position: relative;
+}
+.tank__armor-name {
+   font-size: 30px;
+   font-weight: 500;
+}
+.tank__armor-photo {
+   height: 225px;
+}
+.tank__armor-photo img{
+   position: absolute;
+   width: 400px;
+   bottom: 0;
+   left: 0;
+}
+.tank__armor-photo p{
+   position: absolute;
+   right: center;
+   bottom: 0;
+   
+   text-align: center;
+
+}
+.tank__armor-text {
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+}
+.tank__armor-text p{
+   width: 15px;
+   height: 15px;
+   background-color: red;
+   margin-right: 5px;
+}
+.tank__armor-text span{
+   width: 15px;
+   height: 15px;
+   background-color: #000;
+   margin-right: 5px;
+}
+
+
+.tank__speed {
+   width: 370px;
+}
+.tank__speed-name {
+   font-size: 30px;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.tank__sbeed-box {
+   height: 50px;
+   border: 2px solid #000;
+   border-radius: 15px;
+   display: grid;
+   grid-template-columns: 120px 60px 90px 100px;
+}
+.speed__box-items{
+   height: 50px;
+   font-size: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.speed__box-sht {
+   /*12sm*/
+   border-radius: 15px 0px 0px 15px;
+}
+.speed__box-ht {
+   /*18sm*/
+}
+.speed__box-lt {
+   /*27sm*/
+}
+.speed__box-slt {
+   /*37sm*/
+   border-radius: 0px 15px 15px 0px;
+}
+.speed-active{
+   background-color: rgb(47, 165, 47);
+   height: 47px;
+}
+.speed-active_{
+   background-color: rgb(47, 165, 47);
+   font-size: 20px;
+   height: 47px;
+}
+
+
+.tank__xp{
+   width: 370px;
+}
+.tank__xp-box{
+   height: 50px;
+   width: 370px;
+   border: 2px solid #000;
+   border-radius: 15px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.xp-top{
+   border-radius: 15px 0px 0px 15px;
+}
+.xp-bottom{
+   border-radius: 0px 15px 15px 0px;
+}
+
+
+
+.tank__camo {
+}
+.info__cont {
+}
+.tank__camo-name {
+   font-size: 30px;
+   font-weight: 500;
+}
+.tank__camo-box {
+   display: flex;
+   width: 400px;
+   justify-content: center;
+}
+.maus__camo-box{
+   width: 600px;
+}
+.tank__camo-item {
+   width: 200px;
+   height: 200px;
+   position: relative;
+}
+.tank__camo-item img{
+   width: 300px;
+   top: 20%;
+   left: -30%;
+   position: absolute;
+}
+.tank__camo-none{
+   font-size: 20px;
+   font-weight: 500;
+}
+.none{
+   display: none;
+}
+.camo__item-name {
+   text-align: center;
+}

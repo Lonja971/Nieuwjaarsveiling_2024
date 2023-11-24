@@ -1,0 +1,9 @@
+				<div class="flags __container">
+					<div class="flags__container">
+						<a href="#" class="flags__block">
+							<img src="img/icons-tanks/light.png" class="flags__block-sym"></img>
+							<img src="img/background/logo-small.png" alt="" class="flags__block-tank">
+							<div class="flags__block-name">Name</div>
+						</a>
+					</div>
+				</div>
