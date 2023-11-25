@@ -35,20 +35,20 @@
                     $player_id = $row['player_id'];
 
                     if ($password == $storedPassword) {
-                        echo "<div class='loginTextAlerp'>Пароль правильний</div>";
+                        echo "<div class='loginTextAlerp'>Het wachtwoord is correct</div>";
 
                         // Зберігаємо player_id в куці
                         setcookie("player_id", $player_id, time() + 24 * 3600, "/");
                         header("Location: ../Veiling.html");
                         exit();
                     } else {
-                        echo "<div class='loginTextAlerp red'>!!! Дані введені не правильно !!!</div>";
+                        echo "<div class='loginTextAlerp red'>!!! De gegevens zijn niet correct ingevoerd !!!</div>";
                     }
                 } else {
-                    echo "<div class='loginTextAlerp red'>!!! Дані введені не правильно !!!</div>";
+                    echo "<div class='loginTextAlerp red'>!!! De gegevens zijn niet correct ingevoerd !!!</div>";
                 }
             } else {
-                echo "Помилка при виконанні запиту: " . mysqli_error($mysqli);
+                echo "Er is een fout opgetreden tijdens het uitvoeren van het verzoek: " . mysqli_error($mysqli);
             }
         }
         ?>
