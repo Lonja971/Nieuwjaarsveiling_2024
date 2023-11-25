@@ -319,16 +319,17 @@ function getCookie(name) {
 
 function tokensChecker(response) {
 	if (response) {
+		console.log('y2');
 		 const lastClickTime = response.timerValue;
-
 		 const currentTime = new Date().getTime();
 
-		 if (lastClickTime === null || lastClickTime === undefined || (lastClickTime && currentTime - lastClickTime >= 3600000)) {
-			  tokenButton.classList.remove('lampsBuyed');
-			  startTokens();
-			  tokensTimerSynch(2);
-			  tokenInfoDiv.innerHTML = 'Afhaal!';
+		 if (lastClickTime === null || lastClickTime === undefined || (currentTime - Number(lastClickTime) >= 3600000)) {
+			tokenButton.classList.remove('lampsBuyed');
+			startTokens();
+			tokensTimerSynch(2);
+			tokenInfoDiv.innerHTML = 'Afhaal!';
 		 } else {
+				console.log('y3');
 				const numericTime = Number(lastClickTime);
 				const date = new Date(numericTime);
 			
@@ -397,8 +398,9 @@ function updateButtonClass(response) {
 const interval = 1000;
 
 tokensTimerSynch(1, null, function(response) {
-   tokensChecker(response);
-   updateButtonClass(response);
+	tokensChecker(response);
+	updateButtonClass(response);
+	console.log('y1');
 });
 
 //--------------------------INFORMATIE-OVER-ALLE-TANKS------------------------------
@@ -990,7 +992,7 @@ function anima(value) {
 		audioOpen.play();
 		setTimeout(function () {
 			hlopushka.play();
-		}, 1650);
+		}, 1700);
 		wit_sec.classList.add('wit-op');
 		popupVideo.play();
 
