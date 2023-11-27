@@ -112,7 +112,7 @@ infoLinks.forEach(infoLink => {
 const buttons = document.querySelectorAll('.buttonClickSound');
 
 buttons.forEach(function(button) {
-   button.addEventListener('click', function() {
+   button.addEventListener('mousedown', function() {
 		const audioClick = new Audio("audio/click.mp3");
 		audioClick.play();
    });
@@ -319,7 +319,6 @@ function getCookie(name) {
 
 function tokensChecker(response) {
 	if (response) {
-		console.log('y2');
 		 const lastClickTime = response.timerValue;
 		 const currentTime = new Date().getTime();
 
@@ -329,7 +328,6 @@ function tokensChecker(response) {
 			tokensTimerSynch(2);
 			tokenInfoDiv.innerHTML = 'Afhaal!';
 		 } else {
-				console.log('y3');
 				const numericTime = Number(lastClickTime);
 				const date = new Date(numericTime);
 			
@@ -395,12 +393,12 @@ function updateButtonClass(response) {
 	}
 }
 
+
 const interval = 1000;
 
 tokensTimerSynch(1, null, function(response) {
 	tokensChecker(response);
 	updateButtonClass(response);
-	console.log('y1');
 });
 
 //--------------------------INFORMATIE-OVER-ALLE-TANKS------------------------------
