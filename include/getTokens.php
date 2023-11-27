@@ -7,18 +7,18 @@ $num = $_GET['num'];
 if ($playerId && $num) {
     switch ($num) {
         case 1:
-            $query = "SELECT tokensTimer FROM players WHERE player_id = ?";
+            $query = "SELECT tokens_timer FROM players WHERE player_id = ?";
             $stmt = $mysqli->prepare($query);
             $stmt->bind_param('s', $playerId);
             $stmt->execute();
-            $stmt->bind_result($tokensTimer);
+            $stmt->bind_result($tokens_timer);
             $stmt->fetch();
             $stmt->close();
 
-            echo json_encode(['tokensTimer' => $tokensTimer, 'timerValue' => $tokensTimer]);
+            echo json_encode(['tokens_timer' => $tokens_timer, 'timerValue' => $tokens_timer]);
             break;
         case 2:
-            $query = "UPDATE players SET tokensTimer = NULL WHERE player_id = ?";
+            $query = "UPDATE players SET tokens_timer = NULL WHERE player_id = ?";
             $stmt = $mysqli->prepare($query);
             $stmt->bind_param('s', $playerId);
             $stmt->execute();
@@ -28,7 +28,7 @@ if ($playerId && $num) {
             break;
         case 3:
             $newValue = $_GET['newValue'];
-            $query = "UPDATE players SET tokensTimer = ? WHERE player_id = ?";
+            $query = "UPDATE players SET tokens_timer = ? WHERE player_id = ?";
             $stmt = $mysqli->prepare($query);
             $stmt->bind_param('is', $newValue, $playerId);
             $stmt->execute();

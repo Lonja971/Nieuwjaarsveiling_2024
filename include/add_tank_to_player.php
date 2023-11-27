@@ -5,7 +5,7 @@ if (isset($_POST['playerId']) && isset($_POST['tankId'])) {
     $playerId = $_POST['playerId'];
     $tankId = $_POST['tankId'];
 
-    $addTankQuery = "INSERT INTO player_tanks (player_id, tank_id) VALUES ('$playerId', '$tankId')";
+    $addTankQuery = "INSERT INTO player_tanks (id_player, id_tank) VALUES ('$playerId', '$tankId')";
     $addTankResult = $mysqli->query($addTankQuery);
 
     if ($addTankResult) {

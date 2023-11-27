@@ -15,26 +15,26 @@
     <form id="loginForm" name="loginForm" class="popup__login-box" method="post">
         <div class="popup__login-maintext">Voer uw gegevens in:</div>
         <div class="popup__login-inputBox">
-            <input placeholder="Naam" type="text" id="loginPassword" name="loginName" class="popup__login-input">
-            <input placeholder="Wachtwoord" type="password" id="loginPasword" name="loginPassword" class="popup__login-input">
+            <input placeholder="Naam" type="text" id="loginplayer_password" name="loginName" class="popup__login-input">
+            <input placeholder="Wachtwoord" type="player_password" id="loginPasword" name="loginplayer_password" class="popup__login-input">
         </div>
         <?php
         require_once '../include/db.php';
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = $_POST['loginName'];
-            $password = $_POST['loginPassword'];
+            $player_password = $_POST['loginplayer_password'];
 
-            $checkUserQuery = "SELECT player_id, password FROM players WHERE player_name = '$name'";
+            $checkUserQuery = "SELECT player_id, player_password FROM players WHERE player_name = '$name'";
             $result = mysqli_query($mysqli, $checkUserQuery);
 
             if ($result) {
                 if (mysqli_num_rows($result) > 0) {
                     $row = mysqli_fetch_assoc($result);
-                    $storedPassword = $row['password'];
+                    $storedplayer_password = $row['player_password'];
                     $player_id = $row['player_id'];
 
-                    if ($password == $storedPassword) {
+                    if ($player_password == $storedplayer_password) {
                         echo "<div class='loginTextAlerp'>Het wachtwoord is correct</div>";
 
                         // Зберігаємо player_id в куці
