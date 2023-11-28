@@ -461,22 +461,22 @@ var tanksArrays = {
 //--------------------------TIMER--------------------------
 
 let timers = [
-	{ date: new Date("11 27, 2023 11:30:00"), wave: 0, number: 0.1 },
-	{ date: new Date("11 27, 2023 11:31:00"), wave: 1, number: 1 },
-	{ date: new Date("11 27, 2023 11:32:00"), wave: 1, number: 1 },
-	{ date: new Date("11 27, 2023 11:33:00"), wave: 1, number: 1.3 },
-	{ date: new Date("11 27, 2023 11:34:00"), wave: 1, number: 1.4 },
-	{ date: new Date("11 27, 2023 11:35:00"), wave: 1, number: 0.2 },
-	{ date: new Date("12 27, 2023 11:36:00"), wave: 2, number: 2 },
-	{ date: new Date("11 27, 2023 11:37:00"), wave: 2, number: 2 },
-	{ date: new Date("11 27, 2023 11:38:00"), wave: 2, number: 2.3 },
-	{ date: new Date("11 27, 2023 11:39:00"), wave: 2, number: 2.4 },
-	{ date: new Date("11 27, 2023 11:40:00"), wave: 2, number: 0.3 },
-	{ date: new Date("11 27, 2023 11:41:00"), wave: 3, number: 3 },
-	{ date: new Date("11 27, 2023 11:42:00"), wave: 3, number: 3 },
-	{ date: new Date("11 27, 2023 11:43:00"), wave: 3, number: 3 },
-	{ date: new Date("11 27, 2023 11:44:00"), wave: 3, number: 3.4 },
-	{ date: new Date("11 27, 2023 11:45:00"), wave: 3, number: 3.5 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 0, number: 0.1 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1 },
+	{ date: new Date("12 28, 2023 08:40:00"), wave: 1, number: 1 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1.3 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1.4 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 0.2 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2.3 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2.4 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 0.3 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
+	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
+	{ date: new Date("11 28, 2023 08:59:00"), wave: 3, number: 3.4 },
+	{ date: new Date("11 28, 2023 09:00:00"), wave: 3, number: 3.5 },
 ];
 
 let timerNum = 0;
@@ -642,7 +642,10 @@ function timer() {
 					thirdWaveMain.innerHTML = `Voltooid`;
 					timerMaintext3.classList.add('noneText');
 					thirdWaveSecondtext.innerHTML = ``;
-					tokensStart(tokenStart = 0);
+					tokens_timerSynch(3, null, function (response) {
+						tokensChecker(response);
+						updateButtonClass(response);
+					});
 				}
 				timer();
 			}
@@ -702,7 +705,6 @@ function minusPriceThirdWave() {
 	tanksArrays['udes_15_16'][1] -= 1000;
 	tanksArrays['type_59_gold'][1] -= 1000;
 	tanksArrays['strv_103b'][1] -= 1000;
-	tanksArrays['grill_15'][1] -= 1000;
 	tanksArrays['tortoise'][1] -= 1000;
 	tanksArrays['fosh_155'][1] -= 1000;
 	type_5_heavyPrice.innerHTML = tanksArrays['type_5_heavy'][1];
@@ -788,7 +790,7 @@ promoBox.addEventListener('submit', function (e) {
 				promoBox.classList.add('promoAlerp');
 				setTimeout(function () {
 					promoBox.classList.remove('promoAlerp');
-				}, 5000);
+				}, 3000);
 			}
 		},
 		error: function () {

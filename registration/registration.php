@@ -23,7 +23,7 @@
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $name = $_POST['loginName'];
-            $player_password = $_POST['loginplayer_password'];
+            $player_password = strtolower($_POST['loginplayer_password']);            
 
             $checkUserQuery = "SELECT player_id, player_password FROM players WHERE player_name = '$name'";
             $result = mysqli_query($mysqli, $checkUserQuery);
@@ -34,7 +34,7 @@
                     $storedplayer_password = $row['player_password'];
                     $player_id = $row['player_id'];
 
-                    if ($player_password == $storedplayer_password) {
+                    if ($player_password == strtolower($storedplayer_password)) {
                         echo "<div class='loginTextAlerp'>Het wachtwoord is correct</div>";
 
                         // Зберігаємо player_id в куці
