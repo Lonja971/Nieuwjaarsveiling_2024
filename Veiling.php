@@ -16,18 +16,14 @@
 		<?php
 			require_once 'include/db.php';
 
-			// Виконати запит до бази даних, щоб отримати вміст шапки
 			$query = "SELECT content FROM components WHERE name = 'header'";
 			$result = mysqli_query($mysqli, $query);
 
 			if ($result) {
-				// Перевірка наявності результатів
 				if (mysqli_num_rows($result) > 0) {
-					// Отримання вмісту шапки з результату запиту
 					$row = mysqli_fetch_assoc($result);
 					$header_content = $row['content'];
 
-					// Відображення вмісту шапки на сайті
 					echo $header_content;
 				} else {
 					echo "Шапка не знайдена";
