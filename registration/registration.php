@@ -34,7 +34,6 @@
                 $name = $_POST['loginName'];
                 $player_password = $_POST['loginplayer_password'];
 
-                // We hash the password before comparing it with the database
                 $hashed_password = strtolower(hash('sha256', $player_password));
 
                 $checkUserQuery = "SELECT player_id, player_password FROM players WHERE player_name = '$name'";
@@ -56,24 +55,18 @@
                                 echo "Помилка: " . mysqli_error($mysqli);
                             }
                             
-                        
-                            // Генеруємо токен_identifier
                             $token_identifier = generateRandomString(10);
                             $current_time = time();
                         
-                            // SQL-запит для вставки нового запису в таблицю tokens
                             $insert_query = "INSERT INTO tokens (token_identifier, user_id, created_at) VALUES ('$token_identifier', '$player_id', '$current_time')";
-                            // Виконуємо SQL-запит для вставки нового запису в таблицю tokens
                             $result2 = mysqli_query($mysqli, $insert_query);
 
-                            // Перевіряємо, чи вдалося виконати запит на вставку
                             if ($result2) {
                                 echo "Новий запис успішно створений.";
                             } else {
                                 echo "Помилка: " . mysqli_error($mysqli);
                             }
 
-                        
                             setcookie("t", $token_identifier, time() + 30 * 24 * 3600, "/");
                             header("Location: ../Veiling.php");
                             exit();
