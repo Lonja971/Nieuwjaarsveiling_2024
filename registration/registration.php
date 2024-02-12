@@ -19,38 +19,74 @@
             <input placeholder="Wachtwoord" type="player_password" id="loginPasword" name="loginplayer_password" class="popup__login-input">
         </div>
         <?php
-        require_once '../include/db.php';
+            require_once '../include/db.php';
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $name = $_POST['loginName'];
-            $player_password = strtolower($_POST['loginplayer_password']);            
+            function generateRandomString($length = 10) {
+                $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+                $randomString = '';
+                for ($i = 0; $i < $length; $i++) {
+                    $randomString .= $characters[rand(0, strlen($characters) - 1)];
+                }
+                return $randomString;
+            }
 
-            $checkUserQuery = "SELECT player_id, player_password FROM players WHERE player_name = '$name'";
-            $result = mysqli_query($mysqli, $checkUserQuery);
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $name = $_POST['loginName'];
+                $player_password = $_POST['loginplayer_password'];
 
-            if ($result) {
-                if (mysqli_num_rows($result) > 0) {
-                    $row = mysqli_fetch_assoc($result);
-                    $storedplayer_password = $row['player_password'];
-                    $player_id = $row['player_id'];
+                // We hash the password before comparing it with the database
+                $hashed_password = strtolower(hash('sha256', $player_password));
 
-                    if ($player_password == strtolower($storedplayer_password)) {
-                        echo "<div class='loginTextAlerp'>Het wachtwoord is correct</div>";
+                $checkUserQuery = "SELECT player_id, player_password FROM players WHERE player_name = '$name'";
+                $result = mysqli_query($mysqli, $checkUserQuery);
 
-                        // Зберігаємо player_id в куці
-                        setcookie("player_id", $player_id, time() + 24 * 3600, "/");
-                        header("Location: ../Veiling.html");
-                        exit();
+                if ($result) {
+                    if (mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_assoc($result);
+                        $stored_password = $row['player_password'];
+                        $player_id = $row['player_id'];
+
+                        if ($hashed_password == strtolower($stored_password)) {
+                            echo "<div class='loginTextAlerp'>Het wachtwoord is correct</div>";
+
+                            $delete_query = "DELETE FROM tokens WHERE user_id = '$player_id'";
+                            if (mysqli_query($mysqli, $delete_query)) {
+                                echo "Всі записи з user_id = $player_id було успішно видалено.";
+                            } else {
+                                echo "Помилка: " . mysqli_error($mysqli);
+                            }
+                            
+                        
+                            // Генеруємо токен_identifier
+                            $token_identifier = generateRandomString(10);
+                            $current_time = time();
+                        
+                            // SQL-запит для вставки нового запису в таблицю tokens
+                            $insert_query = "INSERT INTO tokens (token_identifier, user_id, created_at) VALUES ('$token_identifier', '$player_id', '$current_time')";
+                            // Виконуємо SQL-запит для вставки нового запису в таблицю tokens
+                            $result2 = mysqli_query($mysqli, $insert_query);
+
+                            // Перевіряємо, чи вдалося виконати запит на вставку
+                            if ($result2) {
+                                echo "Новий запис успішно створений.";
+                            } else {
+                                echo "Помилка: " . mysqli_error($mysqli);
+                            }
+
+                        
+                            setcookie("t", $token_identifier, time() + 30 * 24 * 3600, "/");
+                            header("Location: ../Veiling.php");
+                            exit();
+                        } else {
+                            echo "<div class='loginTextAlerp red'>!!! De gegevens zijn niet correct ingevoerd !!!</div>";
+                        }                        
                     } else {
                         echo "<div class='loginTextAlerp red'>!!! De gegevens zijn niet correct ingevoerd !!!</div>";
                     }
                 } else {
-                    echo "<div class='loginTextAlerp red'>!!! De gegevens zijn niet correct ingevoerd !!!</div>";
+                    echo "Er is een fout opgetreden tijdens het uitvoeren van het verzoek: " . mysqli_error($mysqli);
                 }
-            } else {
-                echo "Er is een fout opgetreden tijdens het uitvoeren van het verzoek: " . mysqli_error($mysqli);
             }
-        }
         ?>
         <div class="popup__login-form">
             <button class="button buttonClickSound" type="submit">

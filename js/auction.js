@@ -9,9 +9,34 @@ function getCookie(name) {
 	}
 }
 
+var playerId;
+
+// Функція для отримання playerId
+function getUserId(callback) {
+	var t = getCookie('t');
+
+	$.ajax({
+		url: '../include/get_user_id.php',
+		method: 'POST',
+		data: { t: t },
+		success: function (data) {
+			var player_id = JSON.parse(data).player_id;
+			callback(player_id);
+		},
+		error: function (xhr, status, error) {
+			console.error('Помилка: ' + error);
+		}
+	});
+}
+
 $(document).ready(function () {
-	if (!getCookie('player_id')) {
+	if (!getCookie('t')) {
 		window.location.href = '../registration/registration.php';
+	} else {
+		// Викликаємо функцію з передачею колбеку для обробки результатів
+		getUserId(function (playerId) {
+			console.log(playerId); // Виведе playerId
+		});
 	}
 });
 
@@ -31,19 +56,19 @@ var userInfo = {
 
 // Een functie om informatie uit de database op te halen en userInfo bij te werken
 function getUserInfoFromDatabase() {
-	var playerId = getCookie('player_id');
-
-	$.ajax({
-		url: '../include/get_user_info.php',
-		method: 'GET',
-		data: { player_id: playerId },
-		success: function (data) {
-			userInfo = JSON.parse(data);
-			updateHTML();
-		},
-		error: function (xhr, status, error) {
-			console.error('Fout bij het ophalen van informatie uit de database: ' + error);
-		}
+	getUserId(function (playerId) {
+		$.ajax({
+			url: '../include/get_user_info.php',
+			method: 'GET',
+			data: { player_id: playerId },
+			success: function (data) {
+				userInfo = JSON.parse(data);
+				updateHTML();
+			},
+			error: function (xhr, status, error) {
+				console.error('Fout bij het ophalen van informatie uit de database: ' + error);
+			}
+		});
 	});
 }
 
@@ -214,32 +239,39 @@ const allTanksBlocks = {
 };
 
 function checkBuyedTanks() {
-	$.ajax({
-		url: '../include/userTanksSynch.php',
-		method: 'GET',
-		dataType: 'json',
-		success: function (data) {
-			let userTanks = Array.isArray(data) ? data : [data];
-	  
-			Object.keys(allTanksBlocks).forEach(function (tankName) {
-				//console.log('Checking tank:', tankName);
-				//console.log('User tanks:', userTanks);
-	  
-				if (userTanks.includes(tankName)) {
-					allTanksBlocks[tankName].classList.add('buyedTank');
-					if (tankName === 'Т-54') {
-						t_34_s1Block.classList.remove('tank-locked');
-						t_34_s2Block.classList.remove('tank-locked');
-					} else if (tankName === 'Т-64 БМ Оплот') {
-						t_64_sBlock.classList.remove('tank-locked');
-					}
+	getUserId(function (playerId) {
+		$.ajax({
+			url: '../include/userTanksSynch.php',
+			method: 'POST',
+			dataType: 'json',
+			data: { playerId: playerId },
+			success: function (data) {
+				if (data.error) {
+					console.error('Помилка при отриманні списку танків: ' + data.error);
+					return;
 				}
-			});
-	  },	  
-		error: function (jqXHR, textStatus, errorThrown) {
-			 console.error('AJAX request failed. Status:', textStatus, 'Error:', errorThrown);
-		}
-  });
+				let userTanks = Array.isArray(data) ? data : [data];
+
+				Object.keys(allTanksBlocks).forEach(function (tankName) {
+					//console.log('Checking tank:', tankName);
+					//console.log('User tanks:', userTanks);
+
+					if (userTanks.includes(tankName)) {
+						allTanksBlocks[tankName].classList.add('buyedTank');
+						if (tankName === 'Т-54') {
+							t_34_s1Block.classList.remove('tank-locked');
+							t_34_s2Block.classList.remove('tank-locked');
+						} else if (tankName === 'Т-64 БМ Оплот') {
+							t_64_sBlock.classList.remove('tank-locked');
+						}
+					}
+				});
+			},
+			error: function (jqXHR, textStatus, errorThrown) {
+				console.error('AJAX request failed. Status:', textStatus, 'Error:', errorThrown);
+			}
+		});
+	});
 }
 
 // We roepen de functie aan wanneer de pagina wordt geladen
@@ -256,31 +288,31 @@ let response;
 
 // Een databasequery uitvoeren
 function tokens_timerSynch(num, newValue = null, callback) {
-	const playerId = getCookie('player_id');
-
-	if (playerId) {
-		const xhr = new XMLHttpRequest();
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState == 4 && xhr.status == 200) {
-				response = JSON.parse(xhr.responseText);
-				handletokens_timerResponse(response, num);
-				if (callback) {
-					callback(response);
+	getUserId(function (playerId) {
+		if (playerId) {
+			const xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == 4 && xhr.status == 200) {
+					response = JSON.parse(xhr.responseText);
+					handletokens_timerResponse(response, num);
+					if (callback) {
+						callback(response);
+					}
+					updateButtonClass(response);
 				}
-				updateButtonClass(response);
+			};
+
+			let url = '../include/getTokens.php?player_id=' + playerId + '&num=' + num;
+			if (num === 3 && newValue !== null) {
+				url += '&newValue=' + newValue;
 			}
-		};
 
-		let url = '../include/getTokens.php?player_id=' + playerId + '&num=' + num;
-		if (num === 3 && newValue !== null) {
-			url += '&newValue=' + newValue;
+			xhr.open('GET', url, true);
+			xhr.send();
+		} else {
+			console.error('Player ID not found in cookies');
 		}
-
-		xhr.open('GET', url, true);
-		xhr.send();
-	} else {
-		console.error('Player ID not found in cookies');
-	}
+	});
 }
 
 function handletokens_timerResponse(response, num) {
@@ -341,14 +373,15 @@ function tokensChecker(response) {
 // Het starten van het proces voor het starten van een nieuwe timer
 function startTokens() {
 	tokenButton.addEventListener("click", function () {
-		const playerId = getCookie('player_id');
-		if (playerId) {
-			userInfo.tokens += 1;
-			updateHTML();
-			updateDatabase();
-		} else {
-			console.error('Speler-ID niet gevonden in cookies');
-		}
+		getUserId(function (playerId) {
+			if (playerId) {
+				userInfo.tokens += 1;
+				updateHTML();
+				updateDatabase();
+			} else {
+				console.error('Speler-ID niet gevonden in cookies');
+			}
+		});
 		tokenButton.classList.add('lampsBuyed');
 
 		const currentTime = new Date().getTime();
@@ -461,23 +494,23 @@ var tanksArrays = {
 //--------------------------TIMER--------------------------
 
 let timers = [
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 0, number: 0.1 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1 },
-	{ date: new Date("12 28, 2023 08:40:00"), wave: 1, number: 1 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1.3 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 1.4 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 1, number: 0.2 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2.3 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 2.4 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 2, number: 0.3 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
-	{ date: new Date("11 28, 2023 08:40:00"), wave: 3, number: 3 },
-	{ date: new Date("11 28, 2023 08:59:00"), wave: 3, number: 3.4 },
-	{ date: new Date("11 28, 2023 09:00:00"), wave: 3, number: 3.5 },
-];
+	{ date: new Date("12 29, 2023 12:00:00"), wave: 0, number: 0.1 },
+	{ date: new Date("12 29, 2023 23:59:59"), wave: 1, number: 1 },
+	{ date: new Date("12 30, 2023 12:00:00"), wave: 1, number: 1 },
+	{ date: new Date("12 30, 2023 23:59:59"), wave: 1, number: 1.3 },
+	{ date: new Date("12 31, 2023 12:00:00"), wave: 1, number: 1.4 },
+	{ date: new Date("01 01, 2024 12:00:00"), wave: 1, number: 0.2 },
+	{ date: new Date("01 01, 2024 23:59:59"), wave: 2, number: 2 },
+	{ date: new Date("01 02, 2025 12:00:00"), wave: 2, number: 2 },
+	{ date: new Date("01 02, 2024 23:59:59"), wave: 2, number: 2.3 },
+	{ date: new Date("01 03, 2024 12:00:00"), wave: 2, number: 2.4 },
+	{ date: new Date("01 04, 2024 12:00:00"), wave: 2, number: 0.3 },
+	{ date: new Date("01 04, 2024 23:59:59"), wave: 3, number: 3 },
+	{ date: new Date("01 05, 2024 12:00:00"), wave: 3, number: 3 },
+	{ date: new Date("01 05, 2024 23:59:59"), wave: 3, number: 3 },
+	{ date: new Date("01 06, 2024 12:00:00"), wave: 3, number: 3.4 },
+	{ date: new Date("01 07, 2024 12:00:00"), wave: 3, number: 3.5 },
+]
 
 let timerNum = 0;
 timer();
@@ -515,7 +548,7 @@ function timer() {
 					cherchill_gcBlock.classList.remove('tank-closed');
 					wz_pilBlock.classList.remove('tank-closed');
 					timerMaintext1.classList.remove('noneText');
-					
+
 					tokens_timerSynch(1, null, function (response) {
 						tokensChecker(response);
 						updateButtonClass(response);
@@ -739,7 +772,7 @@ document.getElementById('promoCodes').addEventListener('submit', function (e) {
 promoBox.addEventListener('submit', function (e) {
 	e.preventDefault();
 	let promoCode = loginPromo.value.toLowerCase();
-	if (promoCode === 'exit') {
+	if (promoCode === '--exit') {
 		var playerIdValue = getCookie('player_id');
 		if (playerIdValue) {
 			document.cookie = 'player_id' + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
@@ -893,25 +926,25 @@ function purchase(tankId, currency) {
 }
 
 function addTankToPlayer(tank_id) {
-	const playerId = getCookie('player_id');
-
-	if (playerId) {
-		$.ajax({
-			url: '../include/add_tank_to_player.php',
-			method: 'POST',
-			dataType: 'json',
-			data: { playerId: playerId, tankId: tank_id },
-			success: function (response) {
-				console.log('Tank toegevoegd aan speler:', response);
-				checkBuyedTanks();
-			},
-			error: function (xhr, status, error) {
-				console.error('Fout bij toevoegen van tank aan speler:', status, error);
-			}
-		});
-	} else {
-		console.error('Speler-ID niet gevonden in cookies');
-	}
+	getUserId(function (playerId) {
+		if (playerId) {
+			$.ajax({
+				url: '../include/add_tank_to_player.php',
+				method: 'POST',
+				dataType: 'json',
+				data: { playerId: playerId, tankId: tank_id },
+				success: function (response) {
+					console.log('Tank toegevoegd aan speler:', response);
+					checkBuyedTanks();
+				},
+				error: function (xhr, status, error) {
+					console.error('Fout bij toevoegen van tank aan speler:', status, error);
+				}
+			});
+		} else {
+			console.error('Speler-ID niet gevonden in cookies');
+		}
+	});
 }
 
 

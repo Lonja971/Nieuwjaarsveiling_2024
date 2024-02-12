@@ -13,56 +13,29 @@
 </head>
 <body id="body" class="body">
 	<div class="wrapper">
-		<div class="hat">
-			<div class="hat__container _container">
-				<a href="WomT/WomT.html" class="hat__womt">
-					<img src="img/background/logo-small.png" alt="" class="hat__womt-img">
-				</a>
-				<form id="promoCodes" class="form__promo">
-					<button class="promo__button buttonClickSound">
-						<img src="img/background/codes.png" alt="" class="promo__button-img">
-					</button>
-				</form>
-				<ul class="hat__list">
-					<li class="hat__item token-item">
-						<div id="tokenButton" class="hat__item-token lampsBuyed">
-							<button class="button__token">
-								<div>+1</div>
-								<img src="img/resurses/token.png" alt="" class="button__token-img">
-							</button>
-						</div>
-						<div class="tokens__main">
-							<div id="tokens" class="hat__item-kol">0</div>
-							<img src="img/resurses/token.png" alt="" class="hat__item-img">
-							<div class="tokens__info info-bord">
-								Tokens kunnen worden gebruikt om tanks en grondstoffen te kopen (hieronder). Ze kunnen één keer
-								per uur worden ontvangen. Als vervolg op
-								gratis token zal rond zijn: <span id="tokenInfoDiv" class="token__info-time">Begin van het
-									evenement</span>
-							</div>
-						</div>
-					</li>
-					<li class="hat__item gold-item">
-						<div id="gold" class="hat__item-kol">--</div>
-						<img src="img/resurses/gold.png" alt="" class="hat__item-img gold__img-helper">
-						<div class="info-bord gold-info">
-							Je kunt goud krijgen door je tanks te verkopen. Om dit te doen, klikt u op uw naam en ziet u wat u
-							bent
-							wil verkopen Schrijf daarna naar <span class="token__info-time">Leonid</span> wat je wilt
-							verkoop, en hij zal u een promotiecode sturen.
-						</div>
-					</li>
-					<li class="hat__item name-item">
-						<a href="" id="name" class="hat__item-kol">--</a>
-					</li>
-				</ul>
-				<div id="ham" class="hamburger buttonClickSound">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-		</div>
+		<?php
+			require_once 'include/db.php';
+
+			// Виконати запит до бази даних, щоб отримати вміст шапки
+			$query = "SELECT content FROM components WHERE name = 'header'";
+			$result = mysqli_query($mysqli, $query);
+
+			if ($result) {
+				// Перевірка наявності результатів
+				if (mysqli_num_rows($result) > 0) {
+					// Отримання вмісту шапки з результату запиту
+					$row = mysqli_fetch_assoc($result);
+					$header_content = $row['content'];
+
+					// Відображення вмісту шапки на сайті
+					echo $header_content;
+				} else {
+					echo "Шапка не знайдена";
+				}
+			} else {
+				echo "Помилка запиту: " . mysqli_error($mysqli);
+			}
+		?>
 		<header class="header">
 			<div class="header__container _container">
 				<div id="text" class="header__text">
