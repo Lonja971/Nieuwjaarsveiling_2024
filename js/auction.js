@@ -785,50 +785,51 @@ promoBox.addEventListener('submit', function (e) {
 			return null;
 		}
 	}
-
-	$.ajax({
-		url: '../include/check_promo_code.php',
-		method: 'POST',
-		dataType: 'json',
-		data: { promoCode: loginPromo.value.toLowerCase() },
-		success: function (data) {
-			if (data.success) {
-				// Promotiecode is geldig
-				let promoBox = document.getElementById('popupLoginBox');
-				promoBox.classList.add('promoAlert');
-				setTimeout(function () {
-					promoBox.classList.remove('promoAlert');
-				}, 5000);
-
-				userInfo.gold = parseInt(userInfo.gold, 10) + parseInt(data.message, 10);
-				updateHTML();
-				updateDatabase();
-
-				const popup__message = document.createElement('div');
-				popup__message.innerHTML = `
-				<div class="popup__message">
-					<div class="popup__message-text">
-						Je hebt ontvangen: <span class="popup__message-value">+${data.message}</span><img class="popup__message-img" src="img/resurses/gold.png">
+	getUserId(function (playerId) {
+		$.ajax({
+			url: '../include/check_promo_code.php',
+			method: 'POST',
+			dataType: 'json',
+			data: { promoCode: loginPromo.value.toLowerCase(), playerId:playerId },
+			success: function (data) {
+				if (data.success) {
+					// Promotiecode is geldig
+					let promoBox = document.getElementById('popupLoginBox');
+					promoBox.classList.add('promoAlert');
+					setTimeout(function () {
+						promoBox.classList.remove('promoAlert');
+					}, 5000);
+	
+					userInfo.gold = parseInt(userInfo.gold, 10) + parseInt(data.message, 10);
+					updateHTML();
+					updateDatabase();
+	
+					const popup__message = document.createElement('div');
+					popup__message.innerHTML = `
+					<div class="popup__message">
+						<div class="popup__message-text">
+							Je hebt ontvangen: <span class="popup__message-value">+${data.message}</span><img class="popup__message-img" src="img/resurses/gold.png">
+						</div>
 					</div>
-			   </div>
-				`;
-				newMessage();
-				document.getElementById('messages').appendChild(popup__message);
-				setTimeout(function () {
-					popup__message.remove();
-				}, 9000);
-			} else {
-				// Promotiecode is ongeldig of al geactiveerd
-				let promoBox = document.getElementById('popupLoginBox');
-				promoBox.classList.add('promoAlerp');
-				setTimeout(function () {
-					promoBox.classList.remove('promoAlerp');
-				}, 3000);
+					`;
+					newMessage();
+					document.getElementById('messages').appendChild(popup__message);
+					setTimeout(function () {
+						popup__message.remove();
+					}, 9000);
+				} else {
+					// Promotiecode is ongeldig of al geactiveerd
+					let promoBox = document.getElementById('popupLoginBox');
+					promoBox.classList.add('promoAlerp');
+					setTimeout(function () {
+						promoBox.classList.remove('promoAlerp');
+					}, 3000);
+				}
+			},
+			error: function () {
+				console.log('Er is een fout opgetreden tijdens het uitvoeren van een verzoek aan de server');
 			}
-		},
-		error: function () {
-			console.log('Er is een fout opgetreden tijdens het uitvoeren van een verzoek aan de server');
-		}
+		});
 	});
 
 });

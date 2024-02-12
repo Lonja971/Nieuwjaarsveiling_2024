@@ -11,7 +11,7 @@ if (!isset($mysqli) || $mysqli->connect_error) {
 $promoCode = $_POST['promoCode'];
 
 // We krijgen de gebruikers-ID uit cookies (er wordt aangenomen dat u al weet hoe u dit moet doen)
-$userId = $_COOKIE['player_id'];
+$userId = $_POST['playerId'];
 
 // Wij controleren of er een actiecode met de opgegeven naam in de bonus_codestabel aanwezig is
 $result = $mysqli->query("SELECT * FROM bonus_codes WHERE code_name = '$promoCode'");
