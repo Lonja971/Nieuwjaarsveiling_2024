@@ -956,7 +956,6 @@ const popupVideo = document.getElementById('popupVideo');
 
 function animaSynch() {
 	document.getElementById('kv_2Anima').classList.add('displayNone');
-	document.getElementById('pz_b2Anima').classList.add('displayNone');
 	document.getElementById('togg2Anima').classList.add('displayNone');
 	document.getElementById('amx_els_bicAnima').classList.add('displayNone');
 	document.getElementById('crombell_bAnima').classList.add('displayNone');
@@ -970,7 +969,6 @@ function animaSynch() {
 	document.getElementById('amx_30_prot1Anima').classList.add('displayNone');
 	document.getElementById('amx_13_75Anima').classList.add('displayNone');
 	document.getElementById('sy_152Anima').classList.add('displayNone');
-	document.getElementById('scorpion_gAnima').classList.add('displayNone');
 	document.getElementById('t_28_defAnima').classList.add('displayNone');
 	document.getElementById('sy_130_pmAnima').classList.add('displayNone');
 	document.getElementById('type_5_heavyAnima').classList.add('displayNone');
@@ -982,7 +980,6 @@ function animaSynch() {
 	document.getElementById('udes_15_16Anima').classList.add('displayNone');
 	document.getElementById('type_59_goldAnima').classList.add('displayNone');
 	document.getElementById('strv_103bAnima').classList.add('displayNone');
-	document.getElementById('grill_15Anima').classList.add('displayNone');
 	document.getElementById('tortoiseAnima').classList.add('displayNone');
 	document.getElementById('fosh_155Anima').classList.add('displayNone');
 	document.getElementById('t_34_kharkivAnima').classList.add('displayNone');

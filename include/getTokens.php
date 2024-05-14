@@ -30,6 +30,8 @@ if ($playerId && $num) {
             $newValue = $_GET['newValue'];
             $query = "UPDATE players SET tokens_timer = ? WHERE player_id = ?";
             $stmt = $mysqli->prepare($query);
+
+
             $stmt->bind_param('is', $newValue, $playerId);
             $stmt->execute();
             $stmt->close();

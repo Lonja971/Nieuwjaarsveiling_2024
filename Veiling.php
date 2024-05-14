@@ -74,14 +74,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/kv-2.png" alt="">
+										<img class="tank__block-img" src="img/tanks/01.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">КВ-2</p>
+										<p class="auction__info-name">Auto 1</p>
 										<div class="auction__info-price">
 											<p id="kv2Price" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -98,7 +97,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -108,14 +107,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Uk_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/britaine/tog_2.png" alt="">
+										<img class="tank__block-img" src="img/tanks/02.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">TOGG II*</p>
+										<p class="auction__info-name">Auto 2</p>
 										<div class="auction__info-price">
 											<p id="togg2Price" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -132,7 +130,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -142,14 +140,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/amx_els_bic.png" alt="">
+										<img class="tank__block-img" src="img/tanks/03.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">AMX ELS bic</p>
+										<p class="auction__info-name">Auto 3</p>
 										<div class="auction__info-price">
 											<p id="amx_els_bicPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -166,7 +163,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -176,14 +173,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Uk_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/britaine/cromwell_b.png" alt="">
+										<img class="tank__block-img" src="img/tanks/04.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Cromwell Berlin</p>
+										<p class="auction__info-name">Auto 4</p>
 										<div class="auction__info-price">
 											<p id="cromwell_bPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -200,7 +196,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -210,14 +206,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/bt-sv.png" alt="">
+										<img class="tank__block-img" src="img/tanks/05.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">БТ-СВ</p>
+										<p class="auction__info-name">Auto 5</p>
 										<div class="auction__info-price">
 											<p id="bt_svPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -234,7 +229,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -244,14 +239,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/s35_ca.png" alt="">
+										<img class="tank__block-img" src="img/tanks/06.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">S35 CA</p>
+										<p class="auction__info-name">Auto 6</p>
 										<div class="auction__info-price">
 											<p id="s35_caPrice" class="auction__price-text">7000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -268,7 +262,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -278,14 +272,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Uk_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/britaine/cherchill_gc.png" alt="">
+										<img class="tank__block-img" src="img/tanks/07.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Cherchill GC</p>
+										<p class="auction__info-name">Auto 7</p>
 										<div class="auction__info-price">
 											<p id="cherchill_gcPrice" class="auction__price-text">7000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -302,7 +295,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -312,14 +305,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/China_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/china/zw_pilauchiy.png" alt="">
+										<img class="tank__block-img" src="img/tanks/08.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">WZ Brandend</p>
+										<p class="auction__info-name">Auto 8</p>
 										<div class="auction__info-price">
 											<p id="wz_pilPrice" class="auction__price-text">7000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -336,7 +328,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -375,14 +367,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/is2_var2.png" alt="">
+										<img class="tank__block-img" src="img/tanks/09.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">ИС-2 вар.2</p>
+										<p class="auction__info-name">Auto 9</p>
 										<div class="auction__info-price">
 											<p id="is_2_var2Price" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -399,7 +390,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -409,14 +400,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/lorraine_40t.png" alt="">
+										<img class="tank__block-img" src="img/tanks/10.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Lorraine 40t</p>
+										<p class="auction__info-name">Auto 10</p>
 										<div class="auction__info-price">
 											<p id="lorraine_40tPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -433,7 +423,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -443,14 +433,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/China_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/china/wz_111.png" alt="">
+										<img class="tank__block-img" src="img/tanks/11.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">WZ-111</p>
+										<p class="auction__info-name">Auto 11</p>
 										<div class="auction__info-price">
 											<p id="wz_111Price" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -467,7 +456,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -477,14 +466,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/amx30-1.png" alt="">
+										<img class="tank__block-img" src="img/tanks/12.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">AMX 30 prot.1</p>
+										<p class="auction__info-name">Auto 12</p>
 										<div class="auction__info-price">
 											<p id="amx_30_prot1Price" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -501,7 +489,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -511,14 +499,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USA_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/usa/t49.png" alt="">
+										<img class="tank__block-img" src="img/tanks/01.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">T-49</p>
+										<p class="auction__info-name">Auto 13</p>
 										<div class="auction__info-price">
 											<p id="t_49Price" class="auction__price-text">8500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -535,7 +522,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -545,14 +532,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/amx_13_75.png" alt="">
+										<img class="tank__block-img" src="img/tanks/02.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">AMX 13 75</p>
+										<p class="auction__info-name">Auto 14</p>
 										<div class="auction__info-price">
 											<p id="amx_13_75Price" class="auction__price-text">7000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -569,7 +555,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -579,14 +565,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/cy-152.png" alt="">
+										<img class="tank__block-img" src="img/tanks/03.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">СУ-152</p>
+										<p class="auction__info-name">Auto 15</p>
 										<div class="auction__info-price">
 											<p id="sy_152Price" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -603,7 +588,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -613,14 +598,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USA_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/usa/t28-defender.png" alt="">
+										<img class="tank__block-img" src="img/tanks/04.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">T-28 Defender</p>
+										<p class="auction__info-name">Auto 16</p>
 										<div class="auction__info-price">
 											<p id="t_28_defPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -637,7 +621,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -647,14 +631,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/cy-130-pm.png" alt="">
+										<img class="tank__block-img" src="img/tanks/05.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">СУ-130 ПМ</p>
+										<p class="auction__info-name">Auto 17</p>
 										<div class="auction__info-price">
 											<p id="sy_130_pmPrice" class="auction__price-text">7500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -671,7 +654,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -710,14 +693,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Japan_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/japan/type_5_heavy.png" alt="">
+										<img class="tank__block-img" src="img/tanks/05.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Type 5 Heavy</p>
+										<p class="auction__info-name">Auto 18</p>
 										<div class="auction__info-price">
 											<p id="type_5_heavyPrice" class="auction__price-text">10000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -734,7 +716,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -744,14 +726,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USSR_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ussr/is-7.png" alt="">
+										<img class="tank__block-img" src="img/tanks/06.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">ИС-7</p>
+										<p class="auction__info-name">Auto 18</p>
 										<div class="auction__info-price">
 											<p id="is_7Price" class="auction__price-text">8500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -768,7 +749,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -778,14 +759,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/USA_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/usa/t57_heavy.png" alt="">
+										<img class="tank__block-img" src="img/tanks/07.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">T-57 Heavy</p>
+										<p class="auction__info-name">Auto 19</p>
 										<div class="auction__info-price">
 											<p id="t_57_heavyPrice" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -802,7 +782,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -812,14 +792,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Uk_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/britaine/super_conqueror.png" alt="">
+										<img class="tank__block-img" src="img/tanks/08.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Super Conqueror</p>
+										<p class="auction__info-name">Auto 20</p>
 										<div class="auction__info-price">
 											<p id="super_conquerorPrice" class="auction__price-text">8500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -836,7 +815,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -846,14 +825,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/bat-chat_25t.png" alt="">
+										<img class="tank__block-img" src="img/tanks/09.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Bat-Chat 25t</p>
+										<p class="auction__info-name">Auto 21</p>
 										<div class="auction__info-price">
 											<p id="bat_chat_25tPrice" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -870,7 +848,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -880,14 +858,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Sweden_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/sweden/udes_15-16_v2.png" alt="">
+										<img class="tank__block-img" src="img/tanks/10.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Udes 15/16</p>
+										<p class="auction__info-name">Auto 22</p>
 										<div class="auction__info-price">
 											<p id="udes_15_16Price" class="auction__price-text">8500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -904,7 +881,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -914,14 +891,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/China_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/china/type-59_gold.png" alt="">
+										<img class="tank__block-img" src="img/tanks/11.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Type-59 Gold</p>
+										<p class="auction__info-name">Auto 23</p>
 										<div class="auction__info-price">
 											<p id="type_59_gPrice" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -938,7 +914,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -948,14 +924,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Sweden_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/sweden/strv_103b.png" alt="">
+										<img class="tank__block-img" src="img/tanks/12.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Strv 103b</p>
+										<p class="auction__info-name">Auto 24</p>
 										<div class="auction__info-price">
 											<p id="strv_103bPrice" class="auction__price-text">9000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -972,7 +947,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -982,14 +957,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Uk_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/britaine/tortoise.png" alt="">
+										<img class="tank__block-img" src="img/tanks/01.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Tortoise</p>
+										<p class="auction__info-name">Auto 25</p>
 										<div class="auction__info-price">
 											<p id="tortoisePrice" class="auction__price-text">8000</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -1006,7 +980,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1016,14 +990,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/France_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/td.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/france/fosh_155.png" alt="">
+										<img class="tank__block-img" src="img/tanks/02.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">FOSH 155</p>
+										<p class="auction__info-name">Auto 26</p>
 										<div class="auction__info-price">
 											<p id="fosh_155Price" class="auction__price-text">8500</p>
 											<img class="auction__price-img" src="img/resurses/gold.png">
@@ -1040,7 +1013,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1057,7 +1030,7 @@
 							<div class="auction__slider-helper">
 								<div id="goldBox" class="auction__tank-box">
 									<div class="auction__tank-block">
-										<img class="tank__block-img tank__block-gold" src="img/resurses/gold.png" alt="">
+										<img class="tank__block-img tank__block-gold" style="height: 80px; width: auto;" src="img/resurses/gold.png" alt="">
 									</div>
 									<div class="auction__info-block">
 										<p class="auction__info-name">1000 goud</p>
@@ -1084,14 +1057,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t-54.png" alt="">
+										<img class="tank__block-img" src="img/tanks/03.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Т-54</p>
+										<p class="auction__info-name">Auto 27</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">5</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1115,14 +1087,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t64oplot.png" alt="">
+										<img class="tank__block-img" src="img/tanks/04.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Т-64 БМ Оплот</p>
+										<p class="auction__info-name">Auto 28</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">12</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1146,14 +1117,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t34_winter.png" alt="">
+										<img class="tank__block-img" src="img/tanks/05.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Зимній снайпер</p>
+										<p class="auction__info-name">Auto 29</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">3</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1170,7 +1140,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1180,14 +1150,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t-54_patriot1.png" alt="">
+										<img class="tank__block-img" src="img/tanks/06.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Т-54 Патріот</p>
+										<p class="auction__info-name">Auto 30</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">2</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1204,7 +1173,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1214,14 +1183,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/lt.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t-54_patriot2.png" alt="">
+										<img class="tank__block-img" src="img/tanks/07.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name">Т-54 Патріот</p>
+										<p class="auction__info-name">Auto 31</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">2</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1238,7 +1206,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1248,14 +1216,13 @@
 										<img src="img/background/info.png" alt="" class="info-img">
 									</a>
 									<div class="auction__info-photos">
-										<img src="img/flags/Ukraine_flag.png" alt="" class="auction__info-flag">
-										<img src="img/tanksIcons/ht.png" alt="" class="auction__info-type">
+										*Some info
 									</div>
 									<div class="auction__tank-block">
-										<img class="tank__block-img" src="img/tanks/ukraine/t64oplot_skin.png" alt="">
+										<img class="tank__block-img" src="img/tanks/08.png" alt="">
 									</div>
 									<div class="auction__info-block">
-										<p class="auction__info-name auction__text-help">Boze pixel</p>
+										<p class="auction__info-name auction__text-help">Auto 32</p>
 										<div class="auction__info-price">
 											<p class="auction__price-text">3</p>
 											<img class="auction__price-img" src="img/resurses/token.png">
@@ -1272,7 +1239,7 @@
 										</button>
 									</form>
 									<div class="tank__camo-block">
-										<img class="tank__camo-img" src="img/tanks/none.png">
+										<img class="tank__camo-img" src="img/tanks/none2.png">
 									</div>
 								</div>
 							</div>
@@ -1283,13 +1250,9 @@
 		</div>
 		<footer class="footer">
 			<div class="footer__container _container">
-				<p class="footer__text">Wil je de kenmerken van tanks zien? Je kunt het <a class="link"
-						href="WomT/WomT.html">hier</a> doen! Deze veiling is gemaakt op basis van het bouwspel "World of mine tanks".
-						Meldingen van alle aankopen op deze site worden naar de eigenaar van het spel gestuurd <span>(Leonid
-						Aleksieiev)</span>. Als u vragen heeft, kunt u <a class="link"
-						href="https://t.me/Nowqqq">mij</a> schrijven!</p>
+				<p class="footer__text">Race Game 2024
 				<div class="footer__photo">
-					<img class="footer__photo-img" src="img/background/logo-big.png">
+					<img class="footer__photo-img" src="img/background/logo_big.png">
 					</img>
 				</div>
 		</footer>
@@ -1321,263 +1284,220 @@
 		<div class="popup__animation-box">
 			<div id="case" class="animation__box-case">
 				<div id="buyedTankBlock" class="buyedTankBlock">
-					<div id="kv_2Anima" class="auction__tokens-box ussr displayNone">
+					<div id="kv_2Anima" class="auction__tokens-box yellow displayNone">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/kv-2.png">
-							<div class="auction__tank-name">КВ-2</div>
+							<img class="auction__tank-tank" src="img/tanks/01.png">
+							<div class="auction__tank-name">Auto 1</div>
 						</div>
 					</div>
-					<div id="pz_b2Anima" class="auction__tokens-box gr">
+					<div id="togg2Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/germany/pz_b2.png">
-							<div class="auction__tank-name">PZ B2</div>
+							<img class="auction__tank-tank" src="img/tanks/02.png">
+							<div class="auction__tank-name">Auto 2</div>
 						</div>
 					</div>
-					<div id="togg2Anima" class="auction__tokens-box br">
+					<div id="amx_els_bicAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/britaine/tog_2.png">
-							<div class="auction__tank-name">TOGG II*</div>
+							<img class="auction__tank-tank" src="img/tanks/03.png">
+							<div class="auction__tank-name">Auto 3</div>
 						</div>
 					</div>
-					<div id="amx_els_bicAnima" class="auction__tokens-box fr">
+					<div id="crombell_bAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/amx_els_bic.png">
-							<div class="auction__tank-name">AMX ELS bic</div>
+							<img class="auction__tank-tank" src="img/tanks/04.png">
+							<div class="auction__tank-name">Auto 4</div>
 						</div>
 					</div>
-					<div id="crombell_bAnima" class="auction__tokens-box br">
+					<div id="bt_svAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/britaine/cromwell_b.png">
-							<div class="auction__tank-name">Crombell Berlin</div>
+							<img class="auction__tank-tank" src="img/tanks/05.png">
+							<div class="auction__tank-name">Auto 5</div>
 						</div>
 					</div>
-					<div id="bt_svAnima" class="auction__tokens-box ussr">
+					<div id="s35_caAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/bt-sv.png">
-							<div class="auction__tank-name">БТ-СВ</div>
+							<img class="auction__tank-tank" src="img/tanks/06.png">
+							<div class="auction__tank-name">Auto 6</div>
 						</div>
 					</div>
-					<div id="s35_caAnima" class="auction__tokens-box fr">
+					<div id="cherchill_gcAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/s35_ca.png">
-							<div class="auction__tank-name">S 35 CA</div>
+							<img class="auction__tank-tank" src="img/tanks/07.png">
+							<div class="auction__tank-name">Auto 7</div>
 						</div>
 					</div>
-					<div id="cherchill_gcAnima" class="auction__tokens-box br">
+					<div id="wz_pilAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/britaine/cherchill_gc.png">
-							<div class="auction__tank-name">Cherchill GC</div>
+							<img class="auction__tank-tank" src="img/tanks/08.png">
+							<div class="auction__tank-name">Auto 8</div>
 						</div>
 					</div>
-					<div id="wz_pilAnima" class="auction__tokens-box ch">
+					<div id="is_2_var2Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/china/zw_pilauchiy.png">
-							<div class="auction__tank-name">WZ Brandend</div>
+							<img class="auction__tank-tank" src="img/tanks/09.png">
+							<div class="auction__tank-name">Auto 9</div>
 						</div>
 					</div>
-					<div id="is_2_var2Anima" class="auction__tokens-box ussr">
+					<div id="lorraine_40tAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/is2_var2.png">
-							<div class="auction__tank-name">ИС-2 вар.2</div>
+							<img class="auction__tank-tank" src="img/tanks/10.png">
+							<div class="auction__tank-name">Auto 10</div>
 						</div>
 					</div>
-					<div id="lorraine_40tAnima" class="auction__tokens-box fr">
+					<div id="wz_111Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/lorraine_40t.png">
-							<div class="auction__tank-name">Lorraine 40t</div>
+							<img class="auction__tank-tank" src="img/tanks/11.png">
+							<div class="auction__tank-name">Auto 11</div>
 						</div>
 					</div>
-					<div id="wz_111Anima" class="auction__tokens-box ch">
+					<div id="amx_30_prot1Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/china/wz_111.png">
-							<div class="auction__tank-name">WZ-111</div>
+							<img class="auction__tank-tank" src="img/tanks/12.png">
+							<div class="auction__tank-name">Auto 12</div>
 						</div>
 					</div>
-					<div id="amx_30_prot1Anima" class="auction__tokens-box fr">
+					<div id="t_49Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/amx30-1.png">
-							<div class="auction__tank-name">AMX 30 prot.1</div>
+							<img class="auction__tank-tank" src="img/tanks/01.png">
+							<div class="auction__tank-name">Auto 13</div>
 						</div>
 					</div>
-					<div id="t_49Anima" class="auction__tokens-box usa">
+					<div id="amx_13_75Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/usa/t49.png">
-							<div class="auction__tank-name">T-49</div>
+							<img class="auction__tank-tank" src="img/tanks/02.png">
+							<div class="auction__tank-name">Auto 14</div>
 						</div>
 					</div>
-					<div id="amx_13_75Anima" class="auction__tokens-box fr">
+					<div id="sy_152Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/amx_13_75.png">
-							<div class="auction__tank-name">AMX 13 75</div>
+							<img class="auction__tank-tank" src="img/tanks/03.png">
+							<div class="auction__tank-name">Auto 15</div>
 						</div>
 					</div>
-					<div id="sy_152Anima" class="auction__tokens-box ussr">
+					<div id="scorpion_gAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/cy-152.png">
-							<div class="auction__tank-name">СУ-152</div>
+							<img class="auction__tank-tank" src="img/tanks/04.png">
+							<div class="auction__tank-name">Auto 16</div>
 						</div>
 					</div>
-					<div id="scorpion_gAnima" class="auction__tokens-box gr">
+					<div id="t_28_defAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/germany/scorpion.png">
-							<div class="auction__tank-name">Scorpion G</div>
+							<img class="auction__tank-tank" src="img/tanks/05.png">
+							<div class="auction__tank-name">Auto 17</div>
 						</div>
 					</div>
-					<div id="t_28_defAnima" class="auction__tokens-box usa">
+					<div id="sy_130_pmAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/usa/t28-defender.png">
-							<div class="auction__tank-name">T-28 Defender</div>
+							<img class="auction__tank-tank" src="img/tanks/06.png">
+							<div class="auction__tank-name">Auto 19</div>
 						</div>
 					</div>
-					<div id="sy_130_pmAnima" class="auction__tokens-box ussr">
+					<div id="type_5_heavyAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/cy-130-pm.png">
-							<div class="auction__tank-name">СУ-130 ПМ</div>
+							<img class="auction__tank-tank" src="img/tanks/07.png">
+							<div class="auction__tank-name">Auto 20</div>
 						</div>
 					</div>
-					<div id="type_5_heavyAnima" class="auction__tokens-box jp">
+					<div id="is_7Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/japan/type_5_heavy.png">
-							<div class="auction__tank-name">Type 5 Heavy</div>
+							<img class="auction__tank-tank" src="img/tanks/08.png">
+							<div class="auction__tank-name">Auto 21</div>
 						</div>
 					</div>
-					<div id="is_7Anima" class="auction__tokens-box ussr">
+					<div id="t_57_heavyAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ussr/is-7.png">
-							<div class="auction__tank-name">ИС-7</div>
+							<img class="auction__tank-tank" src="img/tanks/09.png">
+							<div class="auction__tank-name">Auto 22</div>
 						</div>
 					</div>
-					<div id="t_57_heavyAnima" class="auction__tokens-box usa">
+					<div id="super_conquerorAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/usa/t57_heavy.png">
-							<div class="auction__tank-name">T-57 Heavy</div>
+							<img class="auction__tank-tank" src="img/tanks/10.png">
+							<div class="auction__tank-name">Auto 23</div>
 						</div>
 					</div>
-					<div id="super_conquerorAnima" class="auction__tokens-box br">
+					<div id="bat_chat_25tAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/britaine/super_conqueror.png">
-							<div class="auction__tank-name">Super Conqueror</div>
+							<img class="auction__tank-tank" src="img/tanks/11.png">
+							<div class="auction__tank-name">Auto 24</div>
 						</div>
 					</div>
-					<div id="bat_chat_25tAnima" class="auction__tokens-box fr">
+					<div id="udes_15_16Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/bat-chat_25t.png">
-							<div class="auction__tank-name">Bat-Chat 25t</div>
+							<img class="auction__tank-tank" src="img/tanks/12.png">
+							<div class="auction__tank-name">Auto 25</div>
 						</div>
 					</div>
-					<div id="udes_15_16Anima" class="auction__tokens-box sw">
+					<div id="type_59_goldAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/sweden/udes_15-16_v2.png">
-							<div class="auction__tank-name">UDES 15/16</div>
+							<img class="auction__tank-tank" src="img/tanks/01.png">
+							<div class="auction__tank-name">Auto 26</div>
 						</div>
 					</div>
-					<div id="type_59_goldAnima" class="auction__tokens-box ch">
+					<div id="strv_103bAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/china/type-59_gold.png">
-							<div class="auction__tank-name">Type-59 Gold</div>
+							<img class="auction__tank-tank" src="img/tanks/02.png">
+							<div class="auction__tank-name">Auto 27</div>
 						</div>
 					</div>
-					<div id="strv_103bAnima" class="auction__tokens-box sw">
+					<div id="grill_15Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/sweden/strv_103b.png">
-							<div class="auction__tank-name">STRV 103b</div>
+							<img class="auction__tank-tank" src="img/tanks/03.png">
+							<div class="auction__tank-name">Auto 28</div>
 						</div>
 					</div>
-					<div id="grill_15Anima" class="auction__tokens-box gr">
+					<div id="tortoiseAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/germany/grill_15.png">
-							<div class="auction__tank-name">Grill-15</div>
+							<img class="auction__tank-tank" src="img/tanks/04.png">
+							<div class="auction__tank-name">Auto 29</div>
 						</div>
 					</div>
-					<div id="tortoiseAnima" class="auction__tokens-box br">
+					<div id="fosh_155Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/britaine/tortoise.png">
-							<div class="auction__tank-name">Tortoise</div>
+							<img class="auction__tank-tank" src="img/tanks/05.png">
+							<div class="auction__tank-name">Auto 30</div>
 						</div>
 					</div>
-					<div id="fosh_155Anima" class="auction__tokens-box fr">
+					<div id="t_34KharkivAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/td.png">
-							<img class="auction__tank-tank" src="img/tanks_full/france/fosh_155.png">
-							<div class="auction__tank-name">FOSH 155</div>
+							<img class="auction__tank-tank" src="img/tanks/06.png">
+							<div class="auction__tank-name">Auto 31</div>
 						</div>
 					</div>
-					<div id="t_34KharkivAnima" class="auction__tokens-box ua">
+					<div id="t_34_kharkivAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t34_kharkiv.png">
-							<div class="auction__tank-name">Т-34 Харків</div>
+							<img class="auction__tank-tank" src="img/tanks/07.png">
+							<div class="auction__tank-name">Auto 32</div>
 						</div>
 					</div>
-					<div id="t_34_kharkivAnima" class="auction__tokens-box ua">
+					<div id="t_34_kharkiv_skin1Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t-54.png">
-							<div class="auction__tank-name">Т-54</div>
+							<img class="auction__tank-tank" src="img/tanks/08.png">
+							<div class="auction__tank-name">Auto 33</div>
 						</div>
 					</div>
-					<div id="t_34_kharkiv_skin1Anima" class="auction__tokens-box ua">
+					<div id="t_34_kharkiv_skin2Anima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t-54_patriot1.png">
-							<div class="auction__tank-name">Т-54 Патріот</div>
+							<img class="auction__tank-tank" src="img/tanks/09.png">
+							<div class="auction__tank-name">Auto 34</div>
 						</div>
 					</div>
-					<div id="t_34_kharkiv_skin2Anima" class="auction__tokens-box ua">
+					<div id="t_64_bm_oplotAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t-54_patriot2.png">
-							<div class="auction__tank-name">Т-54 Патріот</div>
+							<img class="auction__tank-tank" src="img/tanks/10.png">
+							<div class="auction__tank-name">Auto 35</div>
 						</div>
 					</div>
-					<div id="t_64_bm_oplotAnima" class="auction__tokens-box ua">
+					<div id="t_64_bm_oplot_skinAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t64oplot.png">
-							<div class="auction__tank-name">Т-64 БМ Оплот</div>
+							<img class="auction__tank-tank" src="img/tanks/11.png">
+							<div class="auction__tank-name">Auto 36</div>
 						</div>
 					</div>
-					<div id="t_64_bm_oplot_skinAnima" class="auction__tokens-box ua">
+					<div id="t_34_winterAnima" class="auction__tokens-box yellow">
 						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/ht.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t64oplot_skin.png">
-							<div class="auction__tank-name">Розлючений Піксель</div>
-						</div>
-					</div>
-					<div id="t_34_winterAnima" class="auction__tokens-box ua">
-						<div class="auction__tokens-tank">
-							<img class="auction__tank-type" src="img/tanksIcons/lt.png">
-							<img class="auction__tank-tank" src="img/tanks_full/ukraine/t34_winter.png">
-							<div class="auction__tank-name">Зимній снайпер</div>
+							<img class="auction__tank-tank" src="img/tanks/12.png">
+							<div class="auction__tank-name">Auto 37</div>
 						</div>
 					</div>
 				</div>

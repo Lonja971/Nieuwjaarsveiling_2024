@@ -95,14 +95,14 @@
 <div id="popupStart" class="popup__start">
 		<div class="popup__container first-slide">
 			<div class="popup__start-photo">
-				<img src="../img/background/logo-big.png" alt="" class="popup__start-img">
-				<div class="popup__text">Vertegenwoordigt</div>
+				<img src="../img/background/logo_big.png" alt="" class="popup__start-img">
+				<div class="popup__text">Presenteert</div>
 			</div>
 		</div>
 		<div class="popup__container second-slide">
 			<div class="popup__start-photo">
 				<img src="../img/background/alert.png" alt="" class="popup__start-img alarm-img">
-				<div class="popup__text alarm-text">! Let op!<br>Er zit geluid in het project</div>
+				<div class="popup__text alarm-text">! Let op !<br>Geluid aanwezig in het project</div>
 			</div>
 		</div>
 	</div>
